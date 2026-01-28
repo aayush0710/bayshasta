@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BayShasta</title>
+  <style>
+     body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      text-align: center;
+    }
+   body{
+  background-image:
+    linear-gradient(rgba(8,10,18,0.82), rgba(8,10,18,0.82)),
+    url("assets/bg.jpg");
+  background-size: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+
+    header {
+      padding: 60px 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    p {
+      max-width: 600px;
+      margin: 20px auto;
+      line-height: 1.6;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: #f97316;
+      color: #000;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    footer {
+      margin-top: 80px;
+      padding: 20px;
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+     /* Header bar */
+.topbar{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 18px 22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+.topbar{
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(7px);
+  background: rgba(10, 14, 24, 0.55);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  z-index: 10;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo{
+  width: 160px !important;
+  height: auto !important;
+  max-width: none !important;
+}
+
+}
+
+.brand-name{
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* Nav */
+.nav{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.nav a{
+  color: #ffffff;
+  text-decoration:none;
+  opacity:0.8;
+  font-size: 0.95rem;
+}
+
+.nav a:hover{
+  opacity:1;
+}
+
+/* Hero section */
+.hero{
+  max-width: 760px;
+  margin: 40px auto 0;
+  padding: 0 22px;
+  text-align:center;
+}
+
+.tagline{
+  margin-top: 18px;
+  opacity: 0.9;
+}
+.section{
+  max-width: 1000px;
+  margin: 48px auto;
+  padding: 0 22px;
+  text-align: left;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card{
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.muted{ opacity: 0.75; }
+.meta{ opacity: 0.9; margin: 10px 0; }
+
+.updates{
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.8;
+}
+.section {
+  scroll-margin-top: 110px; /* adjust if your header is taller */
+  padding: 80px 20px;
+}
+
+</style>
+ 
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <img src="assets/logo.png" alt="BayShasta logo" class="logo">
+    <span class="brand-name"></span>
+  </div>
+
+  <nav class="nav">
+    <a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#services">NewsLetter</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
+  </nav>
+</header>
+
+<section class="hero" id="home">
+
+  <p class="tagline">
+    BayShasta was born where the restless rhythm of the Bay Area meets the quiet power of Mount Shasta. BayShasta is built on the idea that what we consume, create, and share should carry intention. It’s the space between early-morning drives, fog over the bridges, long days of work, and the pull toward something deeper and more meaningful. Built from lived experience, BayShasta reflects a journey of discipline, curiosity, and inner growth—where hustle is balanced with stillness. It represents community, culture, movement, and mindful living. BayShasta is built for people who work hard, think deeply, and value growth beyond money alone. Every product, post, and idea shared here carries lived experience and intention. BayShasta isn’t rushed—it’s built with patience, honesty, and respect for the process. 
+  </p>
+  <a class="cta" href="mailto:contact@bayshasta.com">Contact</a>
+</section>
+<!-- STEP 4: Current Products -->
+<section class="section" id="products">
+  <h2>Current Products</h2>
+  <p class="muted">Small-batch. Bay Area energy. Updated weekly.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Orange Peel Powder</h3>
+      <p>Bright citrus boost for tea, smoothies, and cooking.</p>
+      <p class="meta">Status: <strong>Available</strong></p>
+      <a class="cta" href="mailto:contact@bayshasta.com?subject=Order%20Orange%20Peel%20Powder">Order</a>
+    </div>
+
+    <div class="card">
+      <h3>Orange Herbal Tea</h3>
+      <p>Clean aroma + calm sip. Easy daily ritual.</p>
+      <p class="meta">Status: <strong>Limited</strong></p>
+      <a class="cta" href="mailto:contact@bayshasta.com?subject=Order%20Orange%20Herbal%20Tea">Order</a>
+    </div>
+
+    <div class="card">
+      <h3>BayShasta Merch</h3>
+      <p>T-shirts, caps, and limited drops.</p>
+      <p class="meta">Status: <strong>Coming soon</strong></p>
+      <a class="cta" href="mailto:contact@bayshasta.com?subject=Merch%20Request">Request</a>
+    </div>
+  </div>
+</section>
+
+<!-- STEP 4: Heartbeat -->
+<section class="section" id="heartbeat">
+  <h2>NewsLetter</h2>
+  <p class="muted">What’s happening right now at BayShasta.</p>
+
+  <div class="card">
+    <ul class="updates">
+      <li><strong>Today:</strong> Label + packaging testing.</li>
+      <li><strong>This week:</strong> Product photos + website updates.</li>
+      <li><strong>Next:</strong> First local drop + feedback round.</li>
+    </ul>
+  </div>
+</section>
+<section id="about" class="section">
+  <h2>About BayShasta</h2>
+  <p>
+   BayShasta operates as an integrated ecosystem combining organic products, business services, and growth platforms. We produce fresh orange-based items—powders, juices, and natural blends. Our focus extends beyond products to people: local subscription deliveries, personalized orders, and community-driven partnerships. BayShasta also supports growth through business diagnostics, advertising, and advisory services, helping ideas evolve into sustainable ventures. BayShasta is designed to grow responsibly—expanding across products, services, and communities while staying rooted in authenticity and quality. 
+
+  </p>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:hello@bayshasta.com">hello@bayshasta.com</a></p>
+  <p>Instagram: <a href="https://instagram.com/" target="_blank">Coming soon</a></p>
+</section>
+
+<footer>
+  © 2026 BayShasta. Built with discipline.
+</footer>
+
+</body>
+</html>
