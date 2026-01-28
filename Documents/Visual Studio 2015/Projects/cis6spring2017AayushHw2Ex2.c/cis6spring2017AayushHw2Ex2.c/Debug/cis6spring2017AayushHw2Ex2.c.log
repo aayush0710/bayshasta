@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\user\documents\visual studio 2015\projects\cis6spring2017aayushhw2ex2.c\cis6spring2017aayushhw2ex2.c\source.cpp(4): error C2065: 'returm': undeclared identifier
+c:\users\user\documents\visual studio 2015\projects\cis6spring2017aayushhw2ex2.c\cis6spring2017aayushhw2ex2.c\source.cpp(4): error C2143: syntax error: missing ';' before 'constant'
+c:\users\user\documents\visual studio 2015\projects\cis6spring2017aayushhw2ex2.c\cis6spring2017aayushhw2ex2.c\source.cpp(3): warning C4778: 'printf' : unterminated format string '%\n'

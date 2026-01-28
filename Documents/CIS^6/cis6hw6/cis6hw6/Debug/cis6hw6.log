@@ -1,0 +1,7 @@
+﻿  cis6spring2017aayushhw3ex1.c
+c:\users\user\documents\cis^6\cis6hw6\cis6hw6\cis6spring2017aayushhw3ex1.c(8): warning C4129: 'F': unrecognized character escape sequence
+c:\users\user\documents\cis^6\cis6hw6\cis6hw6\cis6spring2017aayushhw3ex1.c(7): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: see declaration of 'scanf'
+c:\users\user\documents\cis^6\cis6hw6\cis6hw6\cis6spring2017aayushhw3ex1.c(8): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\users\user\documents\cis^6\cis6hw6\cis6hw6\cis6spring2017aayushhw3ex1.c(8): note: placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+  c:\users\user\documents\cis^6\cis6hw6\cis6hw6\cis6spring2017aayushhw3ex1.c(8): note: the missing variadic argument 2 is required by format string '%d'

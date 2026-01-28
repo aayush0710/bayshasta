@@ -1,0 +1,4 @@
+﻿  funexercise.c
+c:\users\user\documents\cis^6\fun exercise\fun exercise\funexercise.c(14): warning C4778: 'printf' : unterminated format string '%\n'
+  fun exercise.vcxproj -> C:\Users\User\Documents\CIS^6\fun exercise\Debug\fun exercise.exe
+  fun exercise.vcxproj -> C:\Users\User\Documents\CIS^6\fun exercise\Debug\fun exercise.pdb (Full PDB)

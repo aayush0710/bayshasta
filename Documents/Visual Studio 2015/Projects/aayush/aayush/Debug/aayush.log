@@ -1,0 +1,17 @@
+﻿  aayush.c
+c:\users\user\documents\visual studio 2015\projects\aayush\aayush\aayush.c(6): warning C4476: 'printf' : unknown type field character '\r' in format specifier
+c:\users\user\documents\visual studio 2015\projects\aayush\aayush\aayush.c(7): warning C4476: 'printf' : unknown type field character '\r' in format specifier
+c:\users\user\documents\visual studio 2015\projects\aayush\aayush\aayush.c(8): warning C4476: 'printf' : unknown type field character '\r' in format specifier
+c:\users\user\documents\visual studio 2015\projects\aayush\aayush\aayush.c(9): warning C4476: 'printf' : unknown type field character '\r' in format specifier
+c:\users\user\documents\visual studio 2015\projects\aayush\aayush\aayush.c(10): warning C4476: 'printf' : unknown type field character '\r' in format specifier
+c:\users\user\documents\visual studio 2015\projects\aayush\aayush\aayush.c(11): warning C4476: 'printf' : unknown type field character '\r' in format specifier
+c:\users\user\documents\visual studio 2015\projects\aayush\aayush\aayush.c(12): warning C4476: 'printf' : unknown type field character '\r' in format specifier
+c:\users\user\documents\visual studio 2015\projects\aayush\aayush\aayush.c(13): warning C4476: 'printf' : unknown type field character '\r' in format specifier
+c:\users\user\documents\visual studio 2015\projects\aayush\aayush\aayush.c(14): warning C4476: 'printf' : unknown type field character '\r' in format specifier
+c:\users\user\documents\visual studio 2015\projects\aayush\aayush\aayush.c(15): warning C4476: 'printf' : unknown type field character '\r' in format specifier
+c:\users\user\documents\visual studio 2015\projects\aayush\aayush\aayush.c(16): warning C4476: 'printf' : unknown type field character '\r' in format specifier
+c:\users\user\documents\visual studio 2015\projects\aayush\aayush\aayush.c(18): warning C4473: 'printf' : not enough arguments passed for format string
+  c:\users\user\documents\visual studio 2015\projects\aayush\aayush\aayush.c(18): note: placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+  c:\users\user\documents\visual studio 2015\projects\aayush\aayush\aayush.c(18): note: the missing variadic argument 1 is required by format string '%f'
+  aayush.vcxproj -> c:\users\user\documents\visual studio 2015\Projects\aayush\Debug\aayush.exe
+  aayush.vcxproj -> c:\users\user\documents\visual studio 2015\Projects\aayush\Debug\aayush.pdb (Full PDB)

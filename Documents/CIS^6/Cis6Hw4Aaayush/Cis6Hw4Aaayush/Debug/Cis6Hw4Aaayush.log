@@ -1,0 +1,9 @@
+﻿  cis6Aayushhw4.c
+c:\users\user\documents\cis^6\cis6hw4aaayush\cis6hw4aaayush\cis6aayushhw4.c(11): warning C4013: 'displayHW4' undefined; assuming extern returning int
+c:\users\user\documents\cis^6\cis6hw4aaayush\cis6hw4aaayush\cis6aayushhw4.c(20): error C2085: 'factor': not in formal parameter list
+c:\users\user\documents\cis^6\cis6hw4aaayush\cis6hw4aaayush\cis6aayushhw4.c(20): error C2143: syntax error: missing ';' before '='
+c:\users\user\documents\cis^6\cis6hw4aaayush\cis6hw4aaayush\cis6aayushhw4.c(23): error C2059: syntax error: 'for'
+c:\users\user\documents\cis^6\cis6hw4aaayush\cis6hw4aaayush\cis6aayushhw4.c(23): error C2143: syntax error: missing '{' before '++'
+c:\users\user\documents\cis^6\cis6hw4aaayush\cis6hw4aaayush\cis6aayushhw4.c(23): error C2059: syntax error: '++'
+c:\users\user\documents\cis^6\cis6hw4aaayush\cis6hw4aaayush\cis6aayushhw4.c(23): error C2059: syntax error: ')'
+c:\users\user\documents\cis^6\cis6hw4aaayush\cis6hw4aaayush\cis6aayushhw4.c(27): fatal error C1506: unrecoverable block scoping error

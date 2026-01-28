@@ -1,0 +1,7 @@
+﻿  hello.c
+c:\users\user\documents\visual studio 2015\projects\hello world\hello world\hello.c(10): error C2001: newline in constant
+c:\users\user\documents\visual studio 2015\projects\hello world\hello world\hello.c(11): error C2146: syntax error: missing ')' before identifier 'A'
+c:\users\user\documents\visual studio 2015\projects\hello world\hello world\hello.c(19): error C2017: illegal escape sequence
+c:\users\user\documents\visual studio 2015\projects\hello world\hello world\hello.c(19): error C2001: newline in constant
+c:\users\user\documents\visual studio 2015\projects\hello world\hello world\hello.c(7): warning C4778: 'printf' : unterminated format string '%\n'
+c:\users\user\documents\visual studio 2015\projects\hello world\hello world\hello.c(9): warning C4778: 'printf' : unterminated format string '%\n'

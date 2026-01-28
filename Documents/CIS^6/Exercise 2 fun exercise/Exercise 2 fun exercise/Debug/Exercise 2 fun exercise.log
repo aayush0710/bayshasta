@@ -1,0 +1,11 @@
+﻿  funexercise2.c
+c:\users\user\documents\cis^6\exercise 2 fun exercise\exercise 2 fun exercise\funexercise2.c(6): warning C4778: 'printf' : unterminated format string '%\n'
+c:\users\user\documents\cis^6\exercise 2 fun exercise\exercise 2 fun exercise\funexercise2.c(7): warning C4778: 'printf' : unterminated format string '%\n'
+c:\users\user\documents\cis^6\exercise 2 fun exercise\exercise 2 fun exercise\funexercise2.c(8): warning C4778: 'printf' : unterminated format string '%\n'
+c:\users\user\documents\cis^6\exercise 2 fun exercise\exercise 2 fun exercise\funexercise2.c(10): warning C4778: 'printf' : unterminated format string '%\n'
+c:\users\user\documents\cis^6\exercise 2 fun exercise\exercise 2 fun exercise\funexercise2.c(11): warning C4778: 'printf' : unterminated format string '%\n'
+c:\users\user\documents\cis^6\exercise 2 fun exercise\exercise 2 fun exercise\funexercise2.c(12): warning C4476: 'printf' : unknown type field character '\n' in format specifier
+c:\users\user\documents\cis^6\exercise 2 fun exercise\exercise 2 fun exercise\funexercise2.c(13): warning C4778: 'printf' : unterminated format string '%\n'
+c:\users\user\documents\cis^6\exercise 2 fun exercise\exercise 2 fun exercise\funexercise2.c(14): warning C4778: 'printf' : unterminated format string '%\n'
+  Exercise 2 fun exercise.vcxproj -> C:\Users\User\Documents\CIS^6\Exercise 2 fun exercise\Debug\Exercise 2 fun exercise.exe
+  Exercise 2 fun exercise.vcxproj -> C:\Users\User\Documents\CIS^6\Exercise 2 fun exercise\Debug\Exercise 2 fun exercise.pdb (Full PDB)

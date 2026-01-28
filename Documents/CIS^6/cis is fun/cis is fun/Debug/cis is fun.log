@@ -1,0 +1,14 @@
+﻿  cisisfun.c
+c:\users\user\documents\cis^6\cis is fun\cis is fun\cisisfun.c(36): warning C4129: '%': unrecognized character escape sequence
+c:\users\user\documents\cis^6\cis is fun\cis is fun\cisisfun.c(37): warning C4129: '%': unrecognized character escape sequence
+c:\users\user\documents\cis^6\cis is fun\cis is fun\cisisfun.c(38): warning C4129: '%': unrecognized character escape sequence
+c:\users\user\documents\cis^6\cis is fun\cis is fun\cisisfun.c(6): warning C4778: 'printf' : unterminated format string '%\n'
+c:\users\user\documents\cis^6\cis is fun\cis is fun\cisisfun.c(7): warning C4778: 'printf' : unterminated format string '%\n'
+c:\users\user\documents\cis^6\cis is fun\cis is fun\cisisfun.c(8): warning C4778: 'printf' : unterminated format string '%\n'
+c:\users\user\documents\cis^6\cis is fun\cis is fun\cisisfun.c(11): warning C4778: 'printf' : unterminated format string '%\n'
+c:\users\user\documents\cis^6\cis is fun\cis is fun\cisisfun.c(12): warning C4778: 'printf' : unterminated format string '%\n'
+c:\users\user\documents\cis^6\cis is fun\cis is fun\cisisfun.c(13): warning C4476: 'printf' : unknown type field character '\n' in format specifier
+c:\users\user\documents\cis^6\cis is fun\cis is fun\cisisfun.c(14): warning C4778: 'printf' : unterminated format string '%\n'
+c:\users\user\documents\cis^6\cis is fun\cis is fun\cisisfun.c(15): warning C4778: 'printf' : unterminated format string '%\n'
+  cis is fun.vcxproj -> C:\Users\User\Documents\CIS^6\cis is fun\Debug\cis is fun.exe
+  cis is fun.vcxproj -> C:\Users\User\Documents\CIS^6\cis is fun\Debug\cis is fun.pdb (Full PDB)
