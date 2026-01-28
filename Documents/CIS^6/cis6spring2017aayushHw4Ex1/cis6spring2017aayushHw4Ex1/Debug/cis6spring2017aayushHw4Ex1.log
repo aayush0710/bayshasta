@@ -1,3 +1,0 @@
-﻿cis6spring2017aayushHw4Ex1.obj : error LNK2019: unresolved external symbol _printf referenced in function _main
-cis6spring2017aayushHw4Ex1.obj : error LNK2019: unresolved external symbol _scanf_s referenced in function _sum5Int
-C:\Users\User\Documents\CIS^6\cis6spring2017aayushHw4Ex1\Debug\cis6spring2017aayushHw4Ex1.exe : fatal error LNK1120: 2 unresolved externals

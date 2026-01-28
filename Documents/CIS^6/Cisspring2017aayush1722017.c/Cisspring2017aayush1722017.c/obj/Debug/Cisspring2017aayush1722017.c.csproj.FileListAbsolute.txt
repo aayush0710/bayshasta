@@ -1,6 +1,0 @@
-C:\Users\User\Documents\CIS^6\Cisspring2017aayush1722017.c\Cisspring2017aayush1722017.c\bin\Debug\Cisspring2017aayush1722017.c.exe.config
-C:\Users\User\Documents\CIS^6\Cisspring2017aayush1722017.c\Cisspring2017aayush1722017.c\bin\Debug\Cisspring2017aayush1722017.c.exe
-C:\Users\User\Documents\CIS^6\Cisspring2017aayush1722017.c\Cisspring2017aayush1722017.c\bin\Debug\Cisspring2017aayush1722017.c.pdb
-C:\Users\User\Documents\CIS^6\Cisspring2017aayush1722017.c\Cisspring2017aayush1722017.c\obj\Debug\Cisspring2017aayush1722017.c.csprojResolveAssemblyReference.cache
-C:\Users\User\Documents\CIS^6\Cisspring2017aayush1722017.c\Cisspring2017aayush1722017.c\obj\Debug\Cisspring2017aayush1722017.c.exe
-C:\Users\User\Documents\CIS^6\Cisspring2017aayush1722017.c\Cisspring2017aayush1722017.c\obj\Debug\Cisspring2017aayush1722017.c.pdb

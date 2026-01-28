@@ -1,5 +1,0 @@
-﻿1>------ Build started: Project: test02, Configuration: Debug Win32 ------
-1>  test02practise.c
-1>  test02.vcxproj -> C:\Users\User\Documents\CIS^6\test02\Debug\test02.exe
-1>  test02.vcxproj -> C:\Users\User\Documents\CIS^6\test02\Debug\test02.pdb (Full PDB)
-========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
