@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout | BayShasta</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/img/logo.png" alt="BayShasta logo" class="logo" />
+      <span>BayShasta</span>
+      Total: $<span id="checkoutTotal">0.00</span>
+
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a class="active" href="checkout.html">Checkout</a>
+    </nav>
+
+    <a class="cart-link" href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+  </header>
+
+  <main class="section">
+    <h1>Checkout</h1>
+    <p class="muted">Enter your details. Then click “Email receipt”.</p>
+
+    <div class="grid" style="grid-template-columns: 1fr 1fr;">
+      <div class="card">
+        <h3 style="margin-top:0;">Customer</h3>
+        <label>Name<br><input id="custName" style="width:100%; padding:10px; border-radius:10px;"></label><br><br>
+        <label>Email<br><input id="custEmail" type="email" style="width:100%; padding:10px; border-radius:10px;"></label><br><br>
+        <label>Address<br><input id="custAddr" style="width:100%; padding:10px; border-radius:10px;"></label>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-top:0;">Order Summary</h3>
+        <div id="checkoutItems" class="muted"></div>
+        <hr class="divider">
+        <div><strong>Total:</strong> <span id="checkoutTotal">$0.00</span></div>
+
+        <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="btn" id="emailBtn">Email receipt</button>
+          <button class="btn" onclick="clearCart(); location.href='products.html';">Clear & back</button>
+        </div>
+
+        <p class="muted" style="margin-top:10px;">
+          This opens your email app using <code>mailto:</code>. No payment yet (demo).
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/checkout-page.js"></script>
+</body>
+</html>

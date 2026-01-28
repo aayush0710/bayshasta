@@ -4,177 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BayShasta</title>
-  <style>
-     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      text-align: center;
-    }
-   body{
-  background-image:
-    linear-gradient(rgba(8,10,18,0.82), rgba(8,10,18,0.82)),
-    url("assets/bg.jpg");
-  background-size: 100%;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+  <link rel="stylesheet" href="style.css">
 
-
-
-    header {
-      padding: 60px 20px;
-    }
-    h1 {
-      font-size: 2.5rem;
-      letter-spacing: 2px;
-    }
-    p {
-      max-width: 600px;
-      margin: 20px auto;
-      line-height: 1.6;
-    }
-    .cta {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
-      background: #f97316;
-      color: #000;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-    footer {
-      margin-top: 80px;
-      padding: 20px;
-      font-size: 0.85rem;
-      opacity: 0.7;
-    }
-     /* Header bar */
-.topbar{
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 18px 22px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:16px;
-}
-.topbar{
-  position: sticky;
-  top: 0;
-  backdrop-filter: blur(7px);
-  background: rgba(10, 14, 24, 0.55);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  z-index: 10;
-}
-
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
-
-.logo{
-  width: 160px !important;
-  height: auto !important;
-  max-width: none !important;
-}
-
-}
-
-.brand-name{
-  font-size: 1.1rem;
-  font-weight: 800;
-  letter-spacing: 2px;
-}
-
-/* Nav */
-.nav{
-  display:flex;
-  gap:14px;
-  flex-wrap:wrap;
-}
-
-.nav a{
-  color: #ffffff;
-  text-decoration:none;
-  opacity:0.8;
-  font-size: 0.95rem;
-}
-
-.nav a:hover{
-  opacity:1;
-}
-
-/* Hero section */
-.hero{
-  max-width: 760px;
-  margin: 40px auto 0;
-  padding: 0 22px;
-  text-align:center;
-}
-
-.tagline{
-  margin-top: 18px;
-  opacity: 0.9;
-}
-.section{
-  max-width: 1000px;
-  margin: 48px auto;
-  padding: 0 22px;
-  text-align: left;
-}
-
-.grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 16px;
-  margin-top: 16px;
-}
-
-.card{
-  border: 1px solid rgba(255,255,255,0.10);
-  background: rgba(255,255,255,0.05);
-  border-radius: 16px;
-  padding: 18px;
-}
-
-.muted{ opacity: 0.75; }
-.meta{ opacity: 0.9; margin: 10px 0; }
-
-.updates{
-  margin: 0;
-  padding-left: 18px;
-  line-height: 1.8;
-}
-.section {
-  scroll-margin-top: 110px; /* adjust if your header is taller */
-  padding: 80px 20px;
-}
-
-</style>
  
 </head>
+
 <body>
 
 <header class="topbar">
   <div class="brand">
-    <img src="assets/logo.png" alt="BayShasta logo" class="logo">
-    <span class="brand-name"></span>
+    <img src="assets/img/logo.png" alt="BayShasta logo">
+    <span>BayShasta</span>
   </div>
 
   <nav class="nav">
-    <a href="#home">Home</a>
-<a href="#products">Products</a>
-<a href="#services">NewsLetter</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
   </nav>
+
+  <a class="cart-link" href="cart.html">Cart <span id="cartCount">0</span></a>
 </header>
+
+
 
 <section class="hero" id="home">
 
@@ -232,6 +85,16 @@
 
   </p>
 </section>
+<section class="section" id="newsletter">
+  <h2>Newsletter</h2>
+  <p class="muted">Get BayShasta updates — new drops, fresh batches, and Bay Area moments.</p>
+
+  <form class="newsletter" onsubmit="event.preventDefault(); alert('Saved for now (demo).');">
+    <input type="email" placeholder="your@email.com" required />
+    <button class="btn" type="submit">Subscribe</button>
+  </form>
+</section>
+
 
 <section id="contact" class="section">
   <h2>Contact</h2>
