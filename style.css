@@ -44,8 +44,9 @@ a:hover{ opacity: 0.9; }
 }
 
 .brand img{
-  height: 64px !important;
+  height: 100px !important;
   width: auto;
+  display: block;
 }
 
 .brand span{
