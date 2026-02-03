@@ -6,24 +6,35 @@
 
 html { scroll-behavior: smooth; }
 
-body{
-  margin:0;
+body {
+  margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: #f3f3f3;
-  background: #0b0f16;
 
-  background-image: url("./assets/img/bg.jpg");
+  background: #0b0f16;
+  background-image: url("assets/img/bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  position: relative;
 }
-body::before {
+
+/* Dark overlay on TOP of the image */
+body::after {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.45);
-  z-index: -1;
+  background: rgba(0, 0, 0, 0.60); /* stronger so you NOTICE it */
+  pointer-events: none;
+  z-index: 0;
 }
+
+/* Make sure your page content stays above overlay */
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
 
 /* Links */
 a{ color: inherit; text-decoration: none; }
