@@ -1,63 +1,102 @@
 // assets/js/products-page.js
-window.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const categoryGrid = document.getElementById("categoryGrid");
   const productGrid = document.getElementById("productGrid");
   const categoryTitle = document.getElementById("categoryTitle");
 
-  if (!categoryGrid || !productGrid) return;
-
-  const products = window.PRODUCTS || [];
-  const categories = [...new Set(products.map(p => p.category))];
-
-  function renderCategories() {
-    categoryGrid.innerHTML = "";
-    categories.forEach((cat, i) => {
-      const btn = document.createElement("button");
-      btn.className = "category-card";
-      btn.textContent = cat;
-      btn.addEventListener("click", () => selectCategory(cat));
-      categoryGrid.appendChild(btn);
-
-      if (i === 0) selectCategory(cat); // default first
-    });
+  if (!categoryGrid || !productGrid || !categoryTitle) {
+    console.error("Missing #categoryGrid / #productGrid / #categoryTitle in products.html");
+    return;
   }
 
-  function selectCategory(cat) {
-    if (categoryTitle) categoryTitle.textContent = cat;
-    renderProducts(cat);
+  const products = Array.isArray(window.PRODUCTS) ? window.PRODUCTS : [];
+  const categories = Array.isArray(window.CATEGORIES) ? window.CATEGORIES : [];
+
+  if (!categories.length) {
+    categoryTitle.textContent = "No categories found";
+    productGrid.innerHTML = `<p class="muted">CATEGORIES is empty or products.js didn’t load.</p>`;
+    return;
   }
 
-  function renderProducts(cat) {
-    const list = products.filter(p => p.category === cat);
-    productGrid.innerHTML = "";
+  // Render top tabs (product lines)
+  categoryGrid.innerHTML = categories
+    .map((c, idx) => `
+      <button class="card tab ${idx === 0 ? "active" : ""}" data-line="${c.id}">
+        <h3>${c.name}</h3>
+      </button>
+    `)
+    .join("");
 
-    list.forEach(p => {
-      const card = document.createElement("div");
-      card.className = "product-card";
+  function renderProductsForLine(lineId) {
+    const line = categories.find(c => c.id === lineId) || categories[0];
+    categoryTitle.textContent = line.name;
 
-      card.innerHTML = `
-        <h3>${p.name}</h3>
-        <p class="muted">${p.desc}</p>
-        <div class="row">
-          <strong>$${p.price.toFixed(2)}</strong>
-          <button class="btn add-btn">Add to cart</button>
+    const list = products.filter(p => (p.lineId || "orange-labs") === line.id);
+
+    if (!list.length) {
+      productGrid.innerHTML = `<p class="muted">No products in ${line.name} yet.</p>`;
+      return;
+    }
+
+    productGrid.innerHTML = list
+      .map((p) => `
+        <div class="card">
+          <h3>${p.name}</h3>
+          <p class="muted">${p.desc || ""}</p>
+
+          <div class="card-row">
+            <div class="price">${p.requestOnly ? "Request" : "$" + Number(p.price).toFixed(2)}</div>
+            ${
+              p.requestOnly
+                ? `<button class="btn request-btn" data-go="contact.html">Request</button>`
+                : `<button class="btn add-to-cart" data-id="${p.id}">Add to cart</button>`
+            }
+          </div>
         </div>
-      `;
-
-      card.querySelector(".add-btn").addEventListener("click", () => {
-        if (!window.Cart) {
-          alert("Cart system not loaded (cart.js).");
-          return;
-        }
-        window.Cart.add(p.id, 1);
-      });
-
-      productGrid.appendChild(card);
-    });
-
-    // update badge after render
-    if (window.Cart) window.Cart.updateBadge();
+      `)
+      .join("");
   }
 
-  renderCategories();
+  // Click product line tabs
+  categoryGrid.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-line]");
+    if (!btn) return;
+
+    // tab active UI
+    categoryGrid.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    btn.classList.add("active");
+
+    renderProductsForLine(btn.dataset.line);
+  });
+
+  // Add-to-cart + Request buttons (event delegation)
+  productGrid.addEventListener("click", (e) => {
+    const addBtn = e.target.closest(".add-to-cart");
+    if (addBtn) {
+      const id = addBtn.dataset.id;
+      if (!id) return;
+
+      if (window.Cart && typeof window.Cart.addToCart === "function") {
+        window.Cart.addToCart(id, 1);
+      } else if (typeof window.addToCart === "function") {
+        window.addToCart(id, 1);
+      } else {
+        console.error("Cart add function not found. cart.js not loaded?");
+        return;
+      }
+
+      addBtn.textContent = "Added ✓";
+      setTimeout(() => (addBtn.textContent = "Add to cart"), 700);
+      return;
+    }
+
+    const reqBtn = e.target.closest(".request-btn");
+    if (reqBtn) {
+      const go = reqBtn.dataset.go || "contact.html";
+      window.location.href = go;
+    }
+  });
+
+  // Default render first line
+  renderProductsForLine(categories[0].id);
 });

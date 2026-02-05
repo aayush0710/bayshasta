@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Checkout | BayShasta</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
   <header class="topbar">
@@ -35,6 +37,12 @@
         <label>Email<br><input id="custEmail" type="email" style="width:100%; padding:10px; border-radius:10px;"></label><br><br>
         <label>Address<br><input id="custAddr" style="width:100%; padding:10px; border-radius:10px;"></label>
       </div>
+    <div class="summary">
+     <p>Subtotal: <span id="subtotal">$0.00</span></p>
+     <p>Tax: <span id="tax">$0.00</span></p>
+     <p>Delivery: <span id="delivery">$0.00</span></p>
+     <p><strong>Total: <span id="grandTotal">$0.00</span></strong></p>
+    </div>
 
       <div class="card">
         <h3 style="margin-top:0;">Order Summary</h3>
