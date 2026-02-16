@@ -907,3 +907,4 @@ img { max-width: 100%; height: auto; }
 @media (max-width: 900px) {
   .bs-checkout-grid { grid-template-columns: 1fr; }
 }
+html { scroll-behavior: smooth; }
